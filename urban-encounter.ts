@@ -118,7 +118,7 @@ function generateFeatures(): string {
     return features[Math.floor(Math.random() * features.length)];
 }
 
-function generateUrbanEncounter(): Array {
+function generateUrbanEncounter(): string[] {
     let venue = generateVenue();
     let involvement = generateInvolvement();
     let nature = generateNature();

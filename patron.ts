@@ -118,7 +118,7 @@ function generateComplications(): string {
     return complications[Math.floor(Math.random() * complications.length)];
 }
 
-function generatePatron(): Array {
+function generatePatron(): string[] {
     let trustworthiness = generateTrustworthiness();
     let challenge = generateChallenge();
     let countervail = generateCountervail();

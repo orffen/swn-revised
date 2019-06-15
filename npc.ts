@@ -135,7 +135,7 @@ function generateTrait(): string {
     return traits[Math.floor(Math.random() * traits.length)];
 }
 
-function generateNPC(): Array {
+function generateNPC(): string[] {
     let background = generateBackground();
     let role = generateRole();
     let problem = generateProblem();

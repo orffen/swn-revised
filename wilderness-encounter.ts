@@ -118,7 +118,7 @@ function generateFeatures(): string {
     return features[Math.floor(Math.random() * features.length)];
 }
 
-function generateWildernessEncounter(): Array {
+function generateWildernessEncounter(): string[] {
     let weather = generateWeather();
     let nature = generateNature();
     let friendlies = generateFriendlyCreatures();
