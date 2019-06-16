@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>NPC Generator - Stars Without Number Toolbox: Revised Edition</title>
+    <link rel="stylesheet" type="text/css" href="swn-revised.css">
+</head>
+<body>
+    <div class="white-background">
+        <h1>
+            NPC Generator - Stars Without Number Toolbox: Revised Edition
+        </h1>
+        <p class="refresh">
+            <a onclick="init();">Click here</a> for more, or <a href="index.html">click here</a> to return to the toolbox.
+        </p>
+        <ul>
+            <li>Background: <span class="item" id="background"></span></li>
+            <li>Role: <span class="item" id="role"></span></li>
+            <li>Problem: <span class="item" id="problem"></span></li>
+            <li>Age: <span class="item" id="age"></span></li>
+            <li>Desire: <span class="item" id="desire"></span></li>
+            <li>Trait: <span class="item" id="trait"></span></li>
+        </ul>
+    </div>
+    <script type="text/javascript" src="npc.js"></script>
+    <script type="text/javascript">
+        function init() {
+            let ids = ["background", "role", "problem", "age", "desire", "trait"];
+            let npc = generateNPC();
+            for (let index = 0; index < ids.length; index++) {
+                document.getElementById(ids[index]).innerText = npc[index];                
+            }
+        }
+        init();
+    </script>
+</body>
+</html>

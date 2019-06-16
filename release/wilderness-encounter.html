@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>Wilderness Encounter Generator - Stars Without Number Toolbox: Revised Edition</title>
+    <link rel="stylesheet" type="text/css" href="swn-revised.css">
+</head>
+<body>
+    <div class="white-background">
+        <h1>
+            Wilderness Encounter Generator - Stars Without Number Toolbox: Revised Edition
+        </h1>
+        <p class="refresh">
+            <a onclick="init();">Click here</a> for more, or <a href="index.html">click here</a> to return to the toolbox.
+        </p>
+        <ul>
+            <li>Weather: <span class="item" id="weather"></span></li>
+            <li>Nature: <span class="item" id="nature"></span></li>
+            <li>Friendlies: <span class="item" id="friendlies"></span></li>
+            <li>Range: <span class="item" id="range"></span></li>
+            <li>Hostiles: <span class="item" id="hostiles"></span></li>
+            <li>Features: <span class="item" id="features"></span></li>
+        </ul>
+    </div>
+    <script type="text/javascript" src="wilderness-encounter.js"></script>
+    <script type="text/javascript">
+        function init() {
+            let ids = ["weather", "nature", "friendlies", "range", "hostiles", "features"];
+            let npc = generateWildernessEncounter();
+            for (let index = 0; index < ids.length; index++) {
+                document.getElementById(ids[index]).innerText = npc[index];                
+            }
+        }
+        init();
+    </script>
+</body>
+</html>

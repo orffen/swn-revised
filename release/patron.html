@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>Patron Generator - Stars Without Number Toolbox: Revised Edition</title>
+    <link rel="stylesheet" type="text/css" href="swn-revised.css">
+</head>
+<body>
+    <div class="white-background">
+        <h1>
+            Patron Generator - Stars Without Number Toolbox: Revised Edition
+        </h1>
+        <p class="refresh">
+            <a onclick="init();">Click here</a> for more, or <a href="index.html">click here</a> to return to the toolbox.
+        </p>
+        <ul>
+            <li>Trustworthiness: <span class="item" id="trustworthiness"></span></li>
+            <li>Challenge: <span class="item" id="challenge"></span></li>
+            <li>Countervail: <span class="item" id="countervail"></span></li>
+            <li>Eagerness: <span class="item" id="eagerness"></span></li>
+            <li>Rewards: <span class="item" id="rewards"></span></li>
+            <li>Complication: <span class="item" id="complication"></span></li>
+        </ul>
+    </div>
+    <script type="text/javascript" src="patron.js"></script>
+    <script type="text/javascript">
+        function init() {
+            let ids = ["trustworthiness", "challenge", "countervail", "eagerness", "rewards", "complication"];
+            let npc = generatePatron();
+            for (let index = 0; index < ids.length; index++) {
+                document.getElementById(ids[index]).innerText = npc[index];                
+            }
+        }
+        init();
+    </script>
+</body>
+</html>

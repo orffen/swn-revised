@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'Crimson Text';
+    font-weight: normal;
+    font-style: normal;
+    src: url('CrimsonText-Regular.ttf');
+}
+@font-face {
+    font-family: 'Crimson Text';
+    font-weight: normal;
+    font-style: oblique;
+    src: url('CrimsonText-Italic.ttf');
+}
+@font-face {
+    font-family: 'Crimson Text';
+    font-weight: bold;
+    font-style: normal;
+    src: url('CrimsonText-Bold.ttf');
+}
+@font-face {
+    font-family: 'Crimson Text';
+    font-weight: bold;
+    font-style: oblique;
+    src: url('CrimsonText-BoldItalic.ttf');
+}
+@font-face {
+    font-family: Gayatri;
+    src: url('Gayatri.ttf')
+}
+
+body {
+    font-family: 'Crimson Text', Garamond, serif;
+    font-size: 1.3rem;
+    background-image: url('cats-paw-16.jpg'); /* nice NASA image of the day */
+    background-attachment: fixed;
+    background-size: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+
+h1, h2, h3 {
+    font-family: Gayatri;
+    font-weight: normal;
+    font-variant: small-caps;
+}
+
+a {
+    color: black;
+    font-style: oblique;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.white-background {
+    background-image: linear-gradient(to right, white 90%, rgba(0, 0, 0, 0) 92%, rgba(0, 0, 0, 0));
+    width: 87.5%;
+    padding: 8px;
+    padding-right: 10%;
+    padding-left: 2.5%;
+}
+
+.refresh {
+    font-size: 1rem;
+    font-style: oblique;
+}
+
+li {
+    font-size: 1.75rem;
+    font-family: Gayatri;
+}
+li a {
+    font-family: 'Crimson Text';
+}
+
+.item {
+    font-family: 'Crimson Text';
+    font-weight: normal;
+}

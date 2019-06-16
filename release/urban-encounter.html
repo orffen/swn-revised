@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>Urban Encounter Generator - Stars Without Number Toolbox: Revised Edition</title>
+    <link rel="stylesheet" type="text/css" href="swn-revised.css">
+</head>
+<body>
+    <div class="white-background">
+        <h1>
+            Urban Encounter Generator - Stars Without Number Toolbox: Revised Edition
+        </h1>
+        <p class="refresh">
+            <a onclick="init();">Click here</a> for more, or <a href="index.html">click here</a> to return to the toolbox.
+        </p>
+        <ul>
+            <li>Venue: <span class="item" id="venue"></span></li>
+            <li>Involvement: <span class="item" id="involvement"></span></li>
+            <li>Nature: <span class="item" id="nature"></span></li>
+            <li>Reason: <span class="item" id="reason"></span></li>
+            <li>Antagonists: <span class="item" id="antagonists"></span></li>
+            <li>Features: <span class="item" id="features"></span></li>
+        </ul>
+    </div>
+    <script type="text/javascript" src="urban-encounter.js"></script>
+    <script type="text/javascript">
+        function init() {
+            let ids = ["venue", "involvement", "nature", "reason", "antagonists", "features"];
+            let npc = generateUrbanEncounter();
+            for (let index = 0; index < ids.length; index++) {
+                document.getElementById(ids[index]).innerText = npc[index];                
+            }
+        }
+        init();
+    </script>
+</body>
+</html>
