@@ -69,7 +69,7 @@ function generateEagerness(): string {
         "Cautious, but can be convinced to hire",
         "Willing to promise standard rates",
         "Eager, willing to offer a bonus",
-        "Desperate, might offer what they can’t pay"
+        "Desperate, might offer what they can't pay"
     ];
     return eagernesses[Math.floor(Math.random() * eagernesses.length)];
 }
@@ -113,7 +113,7 @@ function generateComplications(): string {
         "A critical element has suddenly moved",
         "Payment is in avidly-pursued hot goods",
         "The true goal is a subsidiary part of the job",
-        "No complications; it’s just as it seems to be"
+        "No complications; it's just as it seems to be"
     ];
     return complications[Math.floor(Math.random() * complications.length)];
 }

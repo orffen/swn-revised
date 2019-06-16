@@ -57,7 +57,7 @@ function generateNature(): string {
         "Someone is being blamed for something",
         "Fires or building collapses are happening",
         "A medical emergency is happening",
-        "Someone’s trying to cheat the PCs",
+        "Someone's trying to cheat the PCs",
         "A vehicle accident is happening",
         "A religious ceremony is being disrupted"
     ];
@@ -105,14 +105,14 @@ function generateFeatures(): string {
         "Streetlights are out or visibility is low",
         "A cop patrol is here and reluctant to act",
         "PC-hostile reporters are recording here",
-        "Someone’s trying to sell something to PCs",
+        "Someone's trying to sell something to PCs",
         "Feral dogs or other animals crowd here",
         "Unrelated activists are protesting here",
         "Street kids are trying to steal from the PCs",
         "GPS maps are dangerously wrong here",
         "Downed power lines are a danger here",
         "Numerous open manholes and utility holes",
-        "The street’s blockaded by something",
+        "The street's blockaded by something",
         "Crowds so thick one can barely move"
     ];
     return features[Math.floor(Math.random() * features.length)];
